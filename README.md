@@ -30,7 +30,8 @@ New York, NY 10003
 ## Usage
 
 Example usage:
-	python metermap.py dickens.txt the_wasteland.txt output.txt --neg --cycle=12
+
+`python metermap.py dickens.txt the_wasteland.txt output.txt --neg --cycle=12`
 
 	Usage:
 	  metermap.py <corpus> <poem> <outfile> 
