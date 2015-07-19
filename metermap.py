@@ -1,9 +1,3 @@
-# TODO
-# [ ] Change last word of lines to make rhyme
-#     Add --rhyme=<scheme> parameter
-# [X] Change sonnet to poem parameter...
-# [X] ...so that sonnets can rise or fall, etc.
-
 # Copyright (C) 2015  Ross Goodwin
 
 # This program is free software: you can redistribute it and/or modify
