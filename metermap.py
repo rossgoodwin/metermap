@@ -29,6 +29,7 @@ Usage:
     [--neg | --pos | --neu]
     [--rise | --fall | --maxlike | --cycle=<len>]
     [--rhyme=<scheme>]
+    [--spaced]
   metermap.py (-h | --help)
   metermap.py --version
 
@@ -51,12 +52,15 @@ Options:
 
   --maxlike     Maxium likelihood sentiment variance
 
-  --cycle=<len> Cycle from prevailing to opposite
-                sentiment every <len> lines;
-                requires --neg, --pos, or --neu
+  --cycle=<len>       Cycle from prevailing to opposite
+                      sentiment every <len> lines;
+                      requires --neg, --pos, or --neu
 
   --rhyme=<scheme>    Attempt to make output poem rhyme
                       <scheme> e.g. ABAB
+  
+  --spaced      Add spaces to front of some lines
+                in output, e.e. cummings style
 
     sonnet      Value for <poem> that produces 14
                 lines in iambic pentameter
@@ -567,12 +571,19 @@ def meter_map(arg_dict):
     final_lines = map(line_fix, final_lines)
     final_lines = last_line_fix(final_lines)
 
+    if arg_dict['--spaced']:
+        longest = len(max(final_lines, key=len))
+        final_lines = map(
+            lambda x: ri(0, longest-len(x))*' '+x,
+            final_lines
+        )
+
     return final_lines
 
 
 if __name__ == '__main__':
     # Process docopt args
-    wargv = docopt(__doc__, version='MeterMap v0.2')
+    wargv = docopt(__doc__, version='MeterMap v0.2.1')
 
     # Meter map
     lines = meter_map(wargv)
