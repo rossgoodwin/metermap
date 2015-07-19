@@ -38,21 +38,38 @@ Example usage:
 	    [--lines]
 	    [--neg | --pos | --neu]
 	    [--rise | --fall | --maxlike | --cycle=<len>]
-	  metermap.py --sonnet <corpus> <outfile>
+	    [--rhyme=<scheme>]
 	  metermap.py (-h | --help)
 	  metermap.py --version
 
 	Options:
 	  -h --help     Show this screen.
+
 	  --version     Show version.
+
 	  --lines       Corpus separated by linebreaks
+
 	  --neg         Negative sentiment prevails
+
 	  --pos         Positive sentiment prevails
+
 	  --neu         Neutral sentiment prevails
+
 	  --rise        Rise from negative to positive
+
 	  --fall        Fall from positive to negative
+
 	  --maxlike     Maxium likelihood sentiment variance
+
 	  --cycle=<len> Cycle from prevailing to opposite
 	                sentiment every <len> lines;
 	                requires --neg, --pos, or --neu
 
+	  --rhyme=<scheme>    Attempt to make output poem rhyme
+	                      <scheme> e.g. ABAB
+
+	    sonnet      Value for <poem> that produces 14
+	                lines in iambic pentameter
+
+	    print       Value for <outfile> that prints to
+	                terminal rather than writing to file
