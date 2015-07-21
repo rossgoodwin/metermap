@@ -56,8 +56,9 @@ Options:
                       sentiment every <len> lines;
                       requires --neg, --pos, or --neu
 
-  --rhyme=<scheme>    Attempt to make output poem rhyme
-                      <scheme> e.g. ABAB
+  --rhyme=<scheme>    Attempt to make output poem rhyme;
+                      <scheme> can be set to auto or a
+                      scheme in the form ABABCDCD, etc.
   
   --spaced      Add spaces to front of some lines
                 in output, e.e. cummings style
