@@ -36,9 +36,15 @@ physical correspondence and verbal abuse to:
 
 ## Usage
 
-Example usage:
+To install required packages:
 
-`python metermap.py dickens.txt the_wasteland.txt output.txt --neg --cycle=12`
+`$ pip install -r requirements.txt`
+
+Example:
+
+`$ python metermap.py dickens.txt the_wasteland.txt output.txt --neg --cycle=12`
+
+All options:
 
 	Usage:
 	  metermap.py <corpus> <poem> <outfile> 
