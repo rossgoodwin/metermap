@@ -42,7 +42,7 @@ To install required packages:
 
 Example:
 
-`$ python metermap.py dickens.txt the_wasteland.txt output.txt --neg --cycle=12`
+`$ python metermap.py corpora/dickens.txt corpora/the_wasteland.txt output.txt --neg --cycle=12`
 
 All options:
 
