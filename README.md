@@ -6,7 +6,7 @@ The software works by parsing every clause and sentence in the input corpus for 
 
 Using the [Pattern](http://www.clips.ua.ac.be/pages/pattern) library's sentiment analysis tool, clauses can be selected based on sentiment to create moody negative poems, uplifting positive ones, or anything in between. You can even cycle back and forth between positive and negative sentiment.
 
-Rhyming tools are included as well, although that part of the software remains a work in progress. If you have ideas for improvements, please don't hesitate to [contact me](mailto:ross.goodwin@gmail.com).
+Rhyming tools are included as well, although that part of the software especially remains a work in progress. If you have ideas for improvements, please don't hesitate to [contact me](mailto:ross.goodwin@gmail.com).
 
 
 ## License
