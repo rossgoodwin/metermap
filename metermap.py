@@ -71,7 +71,6 @@ Options:
 
 """
 
-
 from docopt import docopt
 import json
 import re
@@ -581,8 +580,7 @@ def meter_map(arg_dict):
 
     return final_lines
 
-
-if __name__ == '__main__':
+def main():
     # Process docopt args
     wargv = docopt(__doc__, version='MeterMap v0.2.1')
 
@@ -595,4 +593,7 @@ if __name__ == '__main__':
     else:
         with open(wargv["<outfile>"], 'w') as outfile:
             outfile.write("\n".join(lines))
+
+if __name__ == '__main__':
+    main()
 
