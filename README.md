@@ -1,12 +1,14 @@
 # MeterMap
 
-MeterMap maps clauses from a text corpus onto the metrical structure of a poem. 
+MeterMap maps clauses from a text corpus onto the metrical structure of a poem.
 
 The software works by parsing every clause and sentence in the input corpus for meter using [the CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict), parsing every line in the poem, and then finding clauses from the input corpus that match the meter of each line in the poem.
 
 Using the [Pattern](http://www.clips.ua.ac.be/pages/pattern) library's sentiment analysis tool, clauses can be selected based on sentiment to create moody negative poems, uplifting positive ones, or anything in between. You can even cycle back and forth between positive and negative sentiment.
 
 Rhyming tools are included as well, although that part of the software especially remains a work in progress. If you have ideas for improvements, please don't hesitate to [contact me](mailto:ross.goodwin@gmail.com).
+
+It works best with a very large corpus to draw from. (For example, the included file, `dickens.txt`, contains the complete works of Charles Dickens.)
 
 
 ## License
