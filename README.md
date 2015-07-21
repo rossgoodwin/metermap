@@ -8,7 +8,7 @@ Using the [Pattern](http://www.clips.ua.ac.be/pages/pattern) library's sentiment
 
 Rhyming tools are included as well, although that part of the software especially remains a work in progress. If you have ideas for improvements, please don't hesitate to [contact me](mailto:ross.goodwin@gmail.com).
 
-It works best with a very large corpus to draw from. (For example, the included file, `dickens.txt`, contains the complete works of Charles Dickens.)
+The software works best with a large text corpus to draw clauses from. (For example, the included file, `dickens.txt`, contains the complete works of Charles Dickens.)
 
 
 ## License
